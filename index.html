@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spielname - Offizielle Webseite</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+        nav button {
+            background-color: #ff6600;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            right: 20px;
+        }
+        nav button.logout {
+            background-color: #ff3333;
+        }
+        section {
+            padding: 40px;
+            display: none;
+        }
+        .active-section {
+            display: block;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 300px;
+            transition: background-color 0.3s ease;
+        }
+        .popup input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 90%;
+            border: none;
+            border-radius: 5px;
+            background: #ddd;
+            color: black;
+        }
+        .popup button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #ff6600;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .popup button.close {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Willkommen beim</h1>
+	<h2>Los Angeles Police Department</h2>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <button id="loginButton" onclick="document.getElementById('loginPopup').style.display='block'">Anmelden</button>
+        <a href="#" id="thema1" style="display: none;" onclick="showSection('thema1')">Thema 1</a>
+        <a href="#" id="thema2" style="display: none;" onclick="showSection('thema2')">Thema 2</a>
+    </nav>
+    
+    <section id="home" class="active-section">
+        <div class="container">
+            <h2>Geschichte:</h2>
+            <p>Herzlich willkommen beim Los Angeles Police Department – einer der größten und traditionsreichsten Polizeibehörden der Vereinigten Staaten. Seit unserer Gründung im Jahr 1869 stehen wir für Sicherheit, Gerechtigkeit und Integrität. Wir setzen uns dafür ein, die Menschen in unserer dynamischen und vielfältigen Stadt zu schützen, ihnen zu dienen und ihr Vertrauen zu gewinnen.
+	
+<h2>Mission des LAPD´s?</h2>
+Das LAPD verfolgt das Ziel, Los Angeles zu einem sicheren Ort für alle Bürgerinnen und Bürger zu machen. Mit unserer Arbeit schaffen wir eine Umgebung, in der sich jede Person frei entfalten kann. Wir stehen ein für die Durchsetzung von Recht und Ordnung, den Schutz der Gemeinschaft und die Förderung von Respekt und Gleichberechtigung. Dabei ist es unser Anspruch, die höchsten Standards von Professionalität und Verantwortungsbewusstsein zu wahren.
+
+<h2>Vielfältige Karrieremöglichkeiten:</h2>
+Als modernes Polizeidepartment bieten wir eine breite Palette von Karrieremöglichkeiten, die über den klassischen Polizeidienst hinausgehen.
+Streifendienst: Hier leisten Sie wertvolle Arbeit im direkten Kontakt mit der Bevölkerung und sind oft die erste Anlaufstelle in Notsituationen.
+Spezialisierte Einheiten: Werden Sie Teil unserer King-Unit, der SWAT-Unit, der Gang-Unit oder der forensischen Abteilungen.
+Technologie und Innovation: Unterstützen Sie uns mit modernster Technik, Datenauswertung oder Cybersicherheit, um die Sicherheit der Stadt zu gewährleisten.
+Administrative und unterstützende Rollen: Arbeiten Sie hinter den Kulissen, um unsere Einsätze und Abläufe effizient zu gestalten.
+
+<h2>Unsere Werte:</h2>
+Engagement: Wir stehen in allen Situationen für die Menschen von Los Angeles ein.
+Gemeinschaft: Das Vertrauen zwischen Polizei und Bürgern ist der Schlüssel zu einer erfolgreichen Zusammenarbeit.
+Professionalität: Wir handeln entschlossen, fair und auf höchstem Niveau.
+
+<h2>Warum das LAPD?</h2>
+Das LAPD ist mehr als nur ein Arbeitgeber – es ist eine Berufung. Mit uns können Sie wachsen, neue Herausforderungen meistern und eine sinnstiftende Arbeit leisten. Wir bieten Ihnen nicht nur umfangreiche Weiterbildungsmöglichkeiten, sondern auch ein starkes Team, das Sie auf Ihrem Weg unterstützt.
+
+<h2>Seien Sie Teil von erwas Großem:</h2>
+Los Angeles ist eine Stadt der Vielfalt und Möglichkeiten, und wir sind stolz darauf, diese Werte zu repräsentieren. Gemeinsam können wir unsere Gemeinschaft sicherer und stärker machen. Werden Sie Teil des LAPD und helfen Sie uns, einen positiven Unterschied zu machen – für die Menschen, für die Stadt und für die Zukunft.
+Wir freuen uns darauf, Sie kennenzulernen und gemeinsam mit Ihnen die nächsten Schritte in eine sichere Zukunft zu gehen!</p>
+        </div>
+    </section>
+    
+    <section id="thema1">
+        <div class="container">
+            <h2>Thema 1</h2>
+            <p>Hier sind die Inhalte für das erste Thema.</p>
+        </div>
+    </section>
+    
+    <section id="thema2">
+        <div class="container">
+            <h2>Thema 2</h2>
+            <p>Hier sind die Inhalte für das zweite Thema.</p>
+        </div>
+    </section>
+    
+    <div id="loginPopup" class="popup">
+        <h2>Anmelden</h2>
+        <input type="text" id="username" placeholder="Benutzername">
+        <input type="password" id="password" placeholder="Passwort">
+        <button class="close" onclick="document.getElementById('loginPopup').style.display='none'">Schließen</button>
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Spielname. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script>
+        let isLoggedIn = false; 
+        const users = JSON.parse(localStorage.getItem('users')) || []; // Benutzer aus dem lokalen Speicher laden
+
+        function login() {
+            const validMitarbeiter = { username: 'mitarbeiterUser', password: 'mitarbeiter123' };
+            const validAdmin = { username: 'adminUser', password: 'admin123' };
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const loginPopup = document.getElementById('loginPopup');
+            const loginButton = document.getElementById('loginButton');
+            const thema1 = document.getElementById('thema1');
+            const thema2 = document.getElementById('thema2');
+
+            // Überprüfen, ob die Benutzerdaten für Mitarbeiter oder Administratoren übereinstimmen
+            if (username === validMitarbeiter.username && password === validMitarbeiter.password || username === validAdmin.username && password === validAdmin.password) {
+                alert('Erfolgreich angemeldet!');
+                isLoggedIn = true;
+                loginButton.innerText = 'Abmelden'; 
+                loginButton.classList.add('logout'); 
+                loginButton.setAttribute('onclick', 'logout()');
+                
+                // Neue Themen anzeigen
+                thema1.style.display = 'inline-block';
+                thema2.style.display = 'inline-block';
+                
+                // Login-Popup schließen
+                loginPopup.style.display = 'none';
+            } else {
+                alert('Ungültiger Benutzername oder Passwort!');
+                loginPopup.style.backgroundColor = '#ff3333'; 
+                setTimeout(function() {
+                    loginPopup.style.backgroundColor = '#f4f4f4';
+                }, 500);
+            }
+
+            // Eingabefelder nach jedem Anmeldeversuch zurücksetzen
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        }
+
+        function logout() {
+            // Abmelden und Felder zurücksetzen
+            isLoggedIn = false;
+            document.getElementById('loginButton').innerText = 'Anmelden'; 
+            document.getElementById('loginButton').classList.remove('logout'); 
+            document.getElementById('loginButton').setAttribute('onclick', 'document.getElementById(\'loginPopup\').style.display=\'block\''); 
+            
+            // Alle Themen ausblenden
+            document.getElementById('thema1').style.display = 'none';
+            document.getElementById('thema2').style.display = 'none';
+            
+            // Zurück zur Startseite
+            showSection('home');
+        }
+
+        function showSection(id) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active-section'));
+            document.getElementById(id).classList.add('active-section');
+        }
+    </script>
+</body>
+</html>
